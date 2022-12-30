@@ -1,0 +1,6 @@
+producer.exe:semimp.o producer.o
+	gcc semimp.o producer.o -o producer.exe
+producer.o:producer.c
+	gcc -std=c99 -c producer.c
+semimp.o:semimp.c
+	gcc -std=c99 -c semimp.c

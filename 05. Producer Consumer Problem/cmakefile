@@ -1,0 +1,6 @@
+consumer.exe:semimp.o consumer.o
+	gcc semimp.o consumer.o -o consumer.exe
+consumer.o:consumer.c
+	gcc -std=c99 -c consumer.c
+semimp.o:semimp.c
+	gcc -std=c99 -c semimp.c
